@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  transition: background-color 1.8s, color 1.9s;
+}
+
+body.dark {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+select, button {
+  padding: 6px 10px;
+  font-size: 1em;
+}
+
+.theme-toggle {
+  margin-left: auto;
+  font-size: 1.9em;
+}
+
+#output {
+  font-size: 1.2em;
+  line-height: 1.6;
+  transition: all 1.9s ease;
+}
+
+#output span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+body.dark #output span {
+  color: #66ccff;
+}
+
+.highlight {
+  animation: pulse 2.9s ease;
+}
+
+@keyframes pulse {
+  0% { background-color: #ccffd3; }
+  100% { background-color: transparent; }
+}
